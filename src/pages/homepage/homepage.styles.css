@@ -1,0 +1,32 @@
+*{
+  box-sizing: border-box;
+}
+
+
+input{
+  width: 100vw;
+}
+
+
+
+img{
+  width: 100vw;
+  height: 70vh;
+}
+
+.slider{
+  display: flex;
+  flex-direction: column;
+}
+
+.sli{
+  display: flex;
+  flex-direction: row;
+  overflow:auto;
+  border-style: solid;
+  
+}
+h3{
+  position: absolute;
+  background: grey;
+}
