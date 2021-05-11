@@ -1,6 +1,7 @@
 import React from 'react';
 import './homepage.styles.css'
 
+import Image from '../../component/image-slider/image-slider.component'
 const Homepage = () => (
   <div className="home">
     <div className="search">
@@ -8,7 +9,7 @@ const Homepage = () => (
     </div>
 
     <div className="sliding-image">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Cirsium_eriophorum_%28Kozara_National_Park%2C_Republika_Srpska%29.jpg"  alt='beutifulImage'/>
+      <Image/>
     </div>
 
     <div className="slider">

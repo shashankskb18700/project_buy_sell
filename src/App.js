@@ -1,12 +1,14 @@
 import React from 'react';
 import './App.css';
 import { Route, Switch, Redirect } from 'react-router-dom'
+import { auth, createUserProfileDocument } from "./firebase/firebase.utils";
+import { connect } from "react-redux";
 
 import Homepage from './pages/homepage/homepage.component';
 import SignInAndSignUpPage from './pages/sign-in-and-sign-up/sign-in-and-sign-up.component';
 import Header from './component/header/header.component';
-import { auth, createUserProfileDocument } from './firebase/firebase.utils';
-import { connect } from 'react-redux';
+import ShopPage from './pages/shop/shop.component'
+
 
 import { setCurrentUser } from './redux/user/user.action';
 
@@ -54,14 +56,18 @@ class App extends React.Component {
         {/* currentUser={this.state.currentUser} */}
         <Switch>
           <Route exact path="/" component={Homepage} />
-          <Route exact path="/signin"
+          <Route
+            exact
+            path="/signin"
             render={() =>
               this.props.currentUser ? (
-                <Redirect to='/' />
+                <Redirect to="/" />
               ) : (
-                  <SignInAndSignUpPage />
-                )
-            } />
+                <SignInAndSignUpPage />
+              )
+            }
+          />
+          <Route exact path="/shop" component={ShopPage} />
         </Switch>
       </div>
     );
