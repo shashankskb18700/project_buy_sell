@@ -32,12 +32,16 @@ class App extends React.Component {
         userRef.onSnapshot(snapShot => {
            setCurrentUser({
               id: snapShot.id,
-              ...snapShot.data()
-            })
-          })  
+             ...snapShot.data(),
+             
+             
+           })
+          console.log(snapShot.data())
+        },
+          )  
       }
       // this.setState({ currentUser: user });
-      // console.log(user);
+      
       // createUserProfileDocument(user);
     
       setCurrentUser(userAuth);
