@@ -8,7 +8,14 @@ import Homepage from './pages/homepage/homepage.component';
 import SignInAndSignUpPage from './pages/sign-in-and-sign-up/sign-in-and-sign-up.component';
 import Header from './component/header/header.component';
 import ShopPage from './pages/shop/shop.component'
-
+// 
+// 
+// 
+import CartDropdown from './component/cart-dropdown/cart-dropdown.component'
+import FinalPage from './component/final-page/final-page.component';
+// 
+// 
+// 
 
 import { setCurrentUser } from './redux/user/user.action';
 
@@ -72,6 +79,7 @@ class App extends React.Component {
             }
           />
           <Route exact path="/shop" component={ShopPage} />
+          <Route  path="/final" component={FinalPage} />
         </Switch>
       </div>
     );

@@ -6,11 +6,14 @@ import './custom-button.css'
 //     {children}
 //   </button>
 // )
+import { connect } from "react-redux";
+import { toggleCartHidden } from "../../redux/cart/cart.action";
 
 const CustomButton = ({
   children,
   isGoogleSignIn,
   inverted,
+  toggleCartHidden,
   ...otherProps
 }) => (
   <button
@@ -22,4 +25,8 @@ const CustomButton = ({
     {children}
   </button>
 );
+
+const mapDispatchToProps = (dispatch) => ({
+  toggleCartHidden: () => dispatch(toggleCartHidden()),
+});
 export default CustomButton

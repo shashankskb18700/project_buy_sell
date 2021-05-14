@@ -1,18 +1,28 @@
 import CartActionTypes from './cart.types'
 
 const INITIAL_STATE = {
-  hidden:true
+  hidden: false,
+  cartItems:[]
+  
 }
 
 const cartReducer = (state = INITIAL_STATE, action) => {
   switch (action.type) {
     case CartActionTypes.TOGGLE_CART_HIDDEN:
       return {
-        ...StaticRange,
+        ...state,
         hidden: !state.hidden
+      }
+    case CartActionTypes.ADD_ITEM:
+      return {
+        ...state,
+        cartItems:[action.payload]
       }
     default:
       return state;
   }
 }
 export default cartReducer;
+
+
+// ...state.cartItems,  it need to be go into  CartActionTypes
