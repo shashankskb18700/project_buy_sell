@@ -16,6 +16,7 @@ import FinalPage from './component/final-page/final-page.component';
 // 
 // 
 // 
+import Detail from './component/detail/detail.component';
 
 import { setCurrentUser } from './redux/user/user.action';
 
@@ -50,7 +51,7 @@ class App extends React.Component {
       // this.setState({ currentUser: user });
       
       // createUserProfileDocument(user);
-    
+      // console.log(this.props.currentUser.displayName)
       setCurrentUser(userAuth);
     });
   } 
@@ -64,6 +65,8 @@ class App extends React.Component {
     return (
       <div>
         <Header />
+        {/* <Detail props={this.props}/> */}
+
         {/* currentUser={this.state.currentUser} */}
         <Switch>
           <Route exact path="/" component={Homepage} />
@@ -79,7 +82,7 @@ class App extends React.Component {
             }
           />
           <Route exact path="/shop" component={ShopPage} />
-          <Route  path="/final" component={FinalPage} />
+          <Route path="/final" component={FinalPage} />
         </Switch>
       </div>
     );

@@ -3,7 +3,7 @@ import './header.styles.css'
 import CartIcon from '../cart-icon/cart-icon.component';
 import CartDropdown from '../cart-dropdown/cart-dropdown.component';
 
-
+import Dropable from '../../component/dropable-menu/dropable-menu.component';
 import { Link } from 'react-router-dom';
 import { auth } from '../../firebase/firebase.utils';
 import { connect } from 'react-redux';
@@ -11,16 +11,28 @@ import cartReducer from '../../redux/cart/cart.reducer';
 
 const Header = ({ currentUser, hidden }) => (
   <div className="header">
-    <div className="option">
-      <Link to="/">Home</Link>
-      <Link to="/shop">Shop</Link>
+    {/* <Dropable/> */}
+    <div className="menu">
+      <span>
+        <Link to="/">Home</Link>
+      </span>
+      <span>
+        <Link to="/shop">Shop</Link>
+      </span>
 
       {currentUser ? (
-        <div onClick={() => auth.signOut()}>Sign out</div>
+        <span>
+          <div onClick={() => auth.signOut()} className="signout">
+            Sign out
+          </div>{" "}
+        </span>
       ) : (
-        <Link to="/signin">Sign in</Link>
+        <span>
+          {" "}
+          <Link to="/signin">Sign in</Link>
+        </span>
       )}
-      <CartIcon />
+      {/* <CartIcon /> */}
     </div>
 
     {/* {hidden ? null : <CartDropdown />} */}
@@ -33,3 +45,25 @@ const mapStateToProps = ({ user: { currentUser }, cart: { hidden } }) => ({
 });
 
 export default connect(mapStateToProps)(Header);
+
+
+
+
+
+
+{/* <nav>
+  <ul class="menu">
+    <li>
+      <a href="#!">Home</a>
+    </li>
+    <li>
+      <a href="#!">About</a>
+    </li>
+    <li>
+      <a href="#!">Contact</a>
+    </li>
+    <li>
+      <a href="#!">Faq</a>
+    </li>
+  </ul>
+</nav>; */}

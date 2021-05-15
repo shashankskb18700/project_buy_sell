@@ -1,6 +1,7 @@
 body{
   font-family: 'Open sans condensed';
-  background: black;
+  /* background: black; */
+  background: linear-gradient(#123, #111)
 }
 a{
   text-decoration: none;

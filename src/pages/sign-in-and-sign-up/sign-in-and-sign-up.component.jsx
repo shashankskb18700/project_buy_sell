@@ -3,10 +3,13 @@ import './sign-in-and-sign-up.css';
 import SignIn from '../../component/signin/sign-in.component'
 import SignUp from '../../component/sign-up/sign-up.component'
 const SignInAndSignUpPage = () => (
-  <div className='sign-in-and-sign-up'>
+  <div className="sign-in-and-sign-up">
     <SignIn />
-    <SignUp/>
+    <SignUp />
+    {/* <div
+      className="moon"
+    ></div> */}
   </div>
-)
+);
 
 export default SignInAndSignUpPage;

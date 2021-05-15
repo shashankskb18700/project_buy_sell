@@ -54,6 +54,7 @@ class SignIn extends React.Component{
             required
           />
           {/* <label>email</label> */}
+          
 
           <FormInput
             name="password"
@@ -80,6 +81,7 @@ class SignIn extends React.Component{
             >
               sign in with google
             </CustomButton>
+     
           </div>
         </form>
       </div>

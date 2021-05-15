@@ -1,10 +1,81 @@
 
 .sign-in-and-sign-up{
   display: flex;
-  width: 800px;
-  justify-content: space-between;
+  width: auto;
+  justify-content: space-around;
   margin: 30px auto;
   font-family: 'Dosis';
-  background-color: black;
+  background: linear-gradient(#123, #111);
   color:white
 }
+
+
+
+
+
+
+
+
+
+
+
+
+/* *{
+--background: #182C51;
+--moon: #C7938B;
+--peak: #efdbd8;
+--mobile: 768px;
+}
+
+
+
+@keyframes cresent{
+  0%{
+    transform: translate(-30px, 30px) scale(0.9);
+    box-shadow: none;
+  }
+  50%{
+    transform: translate(0px, 0px) scale(1.02);
+    box-shadow: 0 0 10px lighten(var(--moon), 30%), 0 0 80px 8px var(--moon);
+    background-color: var(--peak);
+  }
+  100%{
+    transform: translate(30px, -30px) scale(0.9);
+    box-shadow: none;
+  }
+}
+
+
+*,*::after, *::before{
+  box-sizing: inherit;
+}
+
+
+
+.moon{
+  background-image: linear-gradient(30deg, darken var(--background,4.6%), darken var(--background, 8.3%));
+  width: 256px;
+  height: 256px;
+  border-radius: 50%;
+  position: relative;
+}
+  .moon::before{
+    content: '';
+    background-color: var(--moon);
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    z-index: -1;
+    animation: 3.2s cresent linear infinite alternate;
+  }
+
+
+@media (max-width: 768px) {
+  .moon{
+    width: 160px;
+    height: 160px;
+  }
+}
+  */

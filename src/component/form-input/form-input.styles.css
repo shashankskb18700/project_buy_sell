@@ -8,7 +8,8 @@
 
 .form-input {
     background: none;
-    background-color:black;
+    /* background-color:black; */
+    /* background: linear-gradient(#123, #111); */
     color: grey;
     font-size: 18px;
     padding: 10px 10px 10px 5px;
