@@ -13,13 +13,22 @@ return (
       {cartItems.map((cartItem) => (
         <CartItem key={cartItem.id} item={cartItem} />
       ))}
+      <StripeCheckoutButton className="stripee" price={price} />
+      <div className="redo">
+        please use this credit Card
+        <br></br>
+        4242 4242 4242 4242 - Exp:01/23 -cvv:123{" "}
+      </div>
     </div>
-    <CustomButton>pay </CustomButton>
-    <StripeCheckoutButton price={price} />
+    {/* <CustomButton>pay </CustomButton> */}
+    {/* 
+    <div className="red">
+      please use this credit Card
+      <br></br>
+      4242 4242 4242 4242 - Exp:01/23 -cvv:123{" "}
+    </div> */}
 
-    <div className='red'>please use this credit Card
-       <br></br>
-    4242 4242 4242 4242 - Exp:01/23 -cvv:123 </div>
+    <div class="moon"></div>
   </div>
 ); 
 }

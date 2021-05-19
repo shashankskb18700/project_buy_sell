@@ -1,8 +1,10 @@
 .cart-item {
   width: 100%;
   display: flex;
-  height: 80px;
+  /* height: 80px; */
   margin-bottom: 15px;
+  flex-direction: column;
+  /* color: white; */
 }
 
 img {
@@ -14,11 +16,34 @@ img {
     width: 70%;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items:initial;
     justify-content: center;
     padding: 10px 20px;
+    top: 30px;
+    color: white;
+    
 }
 
 .name {
       font-size: 16px;
+      background:lightslategray;
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      
 }
+h2{
+  color: khaki;
+}
+
+/* .cart-item{
+
+   background: 
+   linear-gradient(135deg, black 25%, transparent 25%) -50px 0, 
+  linear-gradient(225deg, black 25%, transparent 25%) -50px 0,
+  linear-gradient(315deg, black 25%, transparent 25%),
+  linear-gradient(45deg, black 25%, transparent 25%);	
+  background-size: 2em 2em;
+  background-color: #232323; 
+} */

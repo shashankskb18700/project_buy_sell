@@ -1,5 +1,6 @@
 import React from 'react';
 import './sign-up.styles.css';
+import { Link } from 'react-router-dom';
 
 import FormInput from '../form-input/form-input.component'
 import CustomButton from '../custom-button/custom-button.component'
@@ -105,6 +106,7 @@ class SignUp extends React.Component{
             {/* <CustomButton className='but' type='submit'>Sign Up</CustomButton> */}
             </div>
         </form>
+        
       </div>
     );
   }

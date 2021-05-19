@@ -1,21 +1,13 @@
 
-.sign-in-and-sign-up{
+.subS{
   display: flex;
-  width: auto;
-  /* flex-direction: column; */
   justify-content: space-around;
-  padding: 30px auto;
-  font-family: 'Dosis';
-  padding-bottom: 20px;
-  padding-top: 20px;
-  /* background: linear-gradient(#123, #111); */
-  color:white
-}
-
-.sign-in-and-sign-up {
+  /* align-items: center; */
 	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
 	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
+  animation: gradient 15s ease infinite;
+  width:100vw;
+  font-family: 'Dosis';
 }
 
 @keyframes gradient {
@@ -31,26 +23,16 @@
 }
 
 
-
-.DontHave{
+.HaveAccount{
   margin-top: 15px;
   margin-bottom: 15px;
   font-weight: 500;
-  font-size: 22px;
-  cursor: pointer;
+  font-size: 20px;
+  color:darkblue
 }
-
 @media screen and (max-width:700px){
-  .dashdo{
+  .dashdoo{
     display: none
   }
 
 }
-
-
-
-
-
-
-
-

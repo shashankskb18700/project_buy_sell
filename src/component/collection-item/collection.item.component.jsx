@@ -28,10 +28,14 @@ const CollectionItem = ({
         className="image"
         style={{
           background: `url(${imageUrl})`,
+          backgroundSize: 'cover',
+          backgroundPosition:'center',
+          
+          
         }}
       ></div>
       <div className="collection-footer" >
-        <span className="name">{name}</span>
+        <span className="name ">{name}</span>
         <span className="name">{price}</span>
       </div>
 

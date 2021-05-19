@@ -1,7 +1,7 @@
 import React from 'react';
 import './homepage.styles.css'
 import {Link} from 'react-router-dom'
-
+import Thumbnail from '../../component/AAAA/aaa.component'
 import Image from '../../component/image-slider/image-slider.component'
 const Homepage = () => (
   <div className="home">
@@ -12,7 +12,7 @@ const Homepage = () => (
     <h1>Learn from real word projects </h1>
     <p></p>
     <h5></h5>
-    <Link to='/shop'>
+    <Link to="/shop">
       <main class="wrapper">
         <article class="badge orange">
           <div class="rounded">
@@ -71,11 +71,17 @@ const Homepage = () => (
         </article>
       </main>
     </Link>
+    <h1>Best projects of this month</h1>
+    <div className='thumbo'>
+    <Thumbnail img='https://unsplash.it/600/600?image=1074' info='caport'/>
+    <Thumbnail img='https://unsplash.it/600/600?image=1074' info='dapport'/>
 
+    </div>
+    <div className='thumbo'>
+    <Thumbnail img='https://unsplash.it/600/600?image=1074' info='caport'/>
+    <Thumbnail img='https://unsplash.it/600/600?image=1074' info='dapport'/>
 
- 
-
-
+    </div>
   </div>
 );
 
