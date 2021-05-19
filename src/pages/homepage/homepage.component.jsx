@@ -72,15 +72,26 @@ const Homepage = () => (
       </main>
     </Link>
     <h1>Best projects of this month</h1>
-    <div className='thumbo'>
-    <Thumbnail img='https://unsplash.it/600/600?image=1074' info='caport'/>
-    <Thumbnail img='https://unsplash.it/600/600?image=1074' info='dapport'/>
-
+    <div className="thumbo">
+      <Thumbnail
+        img="https://i.ibb.co/wLb3NTC/image-2021-05-19-213726.png"
+        info="use vanilla js and firebase "
+      />
+      <Thumbnail
+        img="https://i.ibb.co/YZJKFZv/image-2021-05-19-213919.png"
+        info="uses python and Django"
+      />
     </div>
-    <div className='thumbo'>
-    <Thumbnail img='https://unsplash.it/600/600?image=1074' info='caport'/>
-    <Thumbnail img='https://unsplash.it/600/600?image=1074' info='dapport'/>
-
+    <div className="thumbo">
+      <Thumbnail
+        img="https://i.ibb.co/fqhC0vP/image-2021-05-19-214211.png"
+        info="java and spring boot"
+      />
+      <Thumbnail
+        img="https://i.ibb.co/LdnD8xd/image-2021-05-19-214418.png"
+        info="Php and firebase
+        "
+      />
     </div>
   </div>
 );

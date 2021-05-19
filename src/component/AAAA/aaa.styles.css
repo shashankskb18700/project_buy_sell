@@ -51,7 +51,7 @@
 	 position: absolute;
 }
  .thumbnail__img:before {
-	 content: "Hover";
+	 
 	 top: 50%;
 	 left: 50%;
 	 z-index: 10;
